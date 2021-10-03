@@ -1,0 +1,71 @@
+:root {
+    font: {
+        family: "Calibri", sans-serif;
+        weight: 300;
+    }
+}
+.factura {
+    --gap: 20px;
+
+    margin: $margin auto;
+    width: $width;
+    min-height: $height;
+
+    // Borde temporal:
+    border: 1px solid;
+
+    &__title {
+        padding: 20px 0;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            text-align: center;
+
+            font: {
+                weight: 400;
+            }
+            color: darken(white, 70);
+        }
+    }
+
+    &__container {
+        display: flex;
+        gap: var(--gap);
+        padding-left: var(--gap);
+        padding-right: var(--gap);
+        min-height: 90px;
+
+        &__item {
+            border: 1px solid;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 50%;
+
+            border-radius: 10px;
+        }
+    }
+
+    &__table {
+        margin-top: var(--gap);
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid white;
+            padding: 5px;
+        }
+
+        tr:nth-of-type(2n + 1) > td {
+            background-color: darken(white, 10);
+        }
+    }
+}
