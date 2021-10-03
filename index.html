@@ -17,11 +17,13 @@
                 <h1>BOLETA DE ENTREGA</h1>
             </div>
 
+            <!-- Datos del cliente -->
             <div class="factura__container">
                 <div class="factura__container__item">1</div>
                 <div class="factura__container__item">2</div>
             </div>
 
+            <!-- Contenedor de la tabla de precios -->
             <div class="factura__table">
                 <table>
                     <thead>
@@ -37,27 +39,124 @@
                     <tbody>
                         <tr>
                             <td>10300</td>
-                            <td>Lenovo IdeaPad Flex 5 14ARE05</td>
+                            <td>
+                                <p><strong>Lenovo IdeaPad Flex 5 14ARE05</strong></p>
+                                <p>Ryzen™ 3 4300U (velocidad base de 2,70 GHz velocidad máxima de 3,70 Ghz, Quad Core…
+                                </p>
+
+                                <div class="factura__garantia">
+                                    <div class="factura__garantia__inner">
+                                        <div class="factura__garantia__inner__item">
+                                            Garantía de 3 meses en software (90
+                                            días)
+                                        </div>
+
+                                        <div class="factura__garantia__inner__item">
+                                            Finaliza: 17 de diciembre de 2021
+                                        </div>
+                                    </div>
+
+                                    <div class="factura__garantia__inner">
+                                        <div class="factura__garantia__inner__item">
+                                            Garantía de 1 mes en hardware (30 días)
+                                        </div>
+
+                                        <div class="factura__garantia__inner__item">
+                                            Finaliza: 18 de noviembre de 2021
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                             <td>2</td>
                             <td>3.800</td>
                             <td>7.600</td>
                         </tr>
                         <tr>
+                            <td>100023</td>
+                            <td>
+                                <p><strong>Deepcool Coolers para 15,6 pulgadas Multi Core X6</strong></p>
+                                <p>Cuatro ventiladores integrados proporcionan un flujo de aire masivo para enfriar toda
+                                    la base…</p>
+
+                                <div class="factura__garantia">
+                                    <div class="factura__garantia__inner">
+                                        <div class="factura__garantia__inner__item">
+                                            Garantía funcionamiento/prueba (0 días)
+                                        </div>
+
+                                        <div class="factura__garantia__inner__item">
+                                            Finaliza: 02 de noviembre de 2021
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </td>
                             <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
+                            <td>150.00</td>
+                            <td>150.00</td>
                         </tr>
                         <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
+                            <td colspan="2">1</td>
+                            <td colspan="2">TOTAL</td>
+                            <td>7.750.00</td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+
+            <!-- Pie de la factura -->
+            <div class="factura__container">
+                <!-- Tabla en la parte inferior izquierda -->
+                <div class="factura__container__item">
+                    <div class="factura__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>COD</th>
+                                    <th>SKU</th>
+                                    <th>SN</th>
+                                </tr>
+                            </thead>
+
+                            <thead>
+                                <tr>
+                                    <td>20171</td>
+                                    <td>1-INFLAP-MSI100047-78569</td>
+                                    <td>T2004N0002091</td>
+                                </tr>
+                                <tr>
+                                    <td>20172</td>
+                                    <td>1-INFLAP-MSI100047-37804</td>
+                                    <td>T2004N0003439</td>
+                                </tr>
+                                <tr>
+                                    <td>20090</td>
+                                    <td>1-INFBAS-DEE100023-32470</td>
+                                    <td>97003988</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+
+                    <!-- Info -->
+                    <div class="factura__info">
+                        <p><strong>IMPORTANTE:</strong></p>
+                        <ul>
+                            <li>La garantía solo es válida estrictamente durante el período de garantía establecida.
+                            </li>
+                            <li>Debe comunicarse por el medio proporcionado un día antes y en horario habitual de
+                                trabajo.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Zona del código QR -->
+                <div class="factura__container__item">
+                    <div class="factura__qr">
+                        <img src="multimedia/qr.png" alt="">
+                        <p>Código: 10299</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

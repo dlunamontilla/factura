@@ -11,8 +11,16 @@
     width: $width;
     min-height: $height;
 
+    font: {
+        size: 0.82rem;
+    }
     // Borde temporal:
     border: 1px solid;
+    padding-bottom: var(--gap);
+
+    p {
+        margin: 2px auto;
+    }
 
     &__title {
         padding: 20px 0;
@@ -52,6 +60,7 @@
 
     &__table {
         margin-top: var(--gap);
+        margin-bottom: var(--gap);
 
         table {
             border-collapse: collapse;
@@ -60,12 +69,64 @@
 
         th,
         td {
-            border: 1px solid white;
             padding: 5px;
         }
 
         tr:nth-of-type(2n + 1) > td {
             background-color: darken(white, 10);
         }
+
+        tr {
+            &:last-of-type > td:nth-of-type(2) {
+                text-align: right;
+            }
+
+            & > td:first-of-type {
+                font: {
+                    weight: bold;
+                }
+            }
+        }
+
+        td:nth-of-type(3) {
+            text-align: center;
+        }
+    }
+
+    &__qr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-height: 100px;
+        }
+    }
+
+    &__info {
+        p {
+            margin: 0;
+
+            font: {
+                weight: bold;
+            }
+        }
+
+        ul {
+            margin: 0;
+        }
+    }
+
+    &__garantia {
+        border: 2px solid blue;
+        background-color: white;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        margin: 0 auto;
     }
 }

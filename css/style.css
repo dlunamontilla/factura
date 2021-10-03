@@ -8,7 +8,12 @@
   margin: 1.27cm auto;
   width: 21.5cm;
   min-height: 14cm;
+  font-size: 0.82rem;
   border: 1px solid;
+  padding-bottom: var(--gap);
+}
+.factura p {
+  margin: 2px auto;
 }
 .factura__title {
   padding: 20px 0;
@@ -40,6 +45,7 @@
 }
 .factura__table {
   margin-top: var(--gap);
+  margin-bottom: var(--gap);
 }
 .factura__table table {
   border-collapse: collapse;
@@ -47,11 +53,45 @@
 }
 .factura__table th,
 .factura__table td {
-  border: 1px solid white;
   padding: 5px;
 }
 .factura__table tr:nth-of-type(2n + 1) > td {
   background-color: #e6e6e6;
+}
+.factura__table tr:last-of-type > td:nth-of-type(2) {
+  text-align: right;
+}
+.factura__table tr > td:first-of-type {
+  font-weight: bold;
+}
+.factura__table td:nth-of-type(3) {
+  text-align: center;
+}
+.factura__qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.factura__qr img {
+  display: block;
+  margin: 0 auto;
+  max-height: 100px;
+}
+.factura__info p {
+  margin: 0;
+  font-weight: bold;
+}
+.factura__info ul {
+  margin: 0;
+}
+.factura__garantia {
+  border: 2px solid blue;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
