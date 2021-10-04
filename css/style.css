@@ -90,11 +90,24 @@ strong {
   border-collapse: collapse;
   width: 100%;
 }
+.factura__table table td {
+  position: relative;
+}
 .factura__table table[data-width="auto"] {
   width: auto;
 }
 .factura__table table[data-width="auto"] td {
+  position: relative;
   padding: 2px 10px;
+}
+.factura__table table .layer {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-top: 7px;
 }
 .factura__table th,
 .factura__table td {

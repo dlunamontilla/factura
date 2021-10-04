@@ -117,12 +117,28 @@ strong {
             border-collapse: collapse;
             width: 100%;
 
+            td {
+                position: relative;
+            }
+
             &[data-width="auto"] {
                 width: auto;
 
                 td {
+                    position: relative;
                     padding: 2px 10px;
                 }
+            }
+
+            .layer {
+                position: absolute;
+                margin: auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+
+                padding-top: 7px;
             }
         }
 
