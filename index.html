@@ -14,13 +14,57 @@
     <main id="app">
         <div class="factura">
             <div class="factura__title">
+                <div class="factura__title__logo">
+                    <img src="multimedia/logo.png" alt="Logo">
+                </div>
+
                 <h1>BOLETA DE ENTREGA</h1>
+
+                <div></div>
             </div>
 
             <!-- Datos del cliente -->
             <div class="factura__container">
-                <div class="factura__container__item factura__container__item--datos">1</div>
-                <div class="factura__container__item factura__container__item--datos">2</div>
+                <!-- Datos del cliente -->
+                <div class="factura__container__item factura__container__item--datos">
+                    <div class="datos">
+                        <div class="datos__item"><strong>Código cliente</strong></div>
+                        <div class="datos__item">210299</div>
+                    </div>
+                    <div class="datos">
+                        <div class="datos__item"><strong>Nombre</strong></div>
+                        <div class="datos__item">Deimar Abel Maqui Fabián</div>
+                    </div>
+                    <div class="datos">
+                        <div class="datos__item"><strong>Cédula de identidad</strong></div>
+                        <div class="datos__item">9994701</div>
+                    </div>
+
+                    <div class="datos">
+                        <div class="datos__item"><strong>Teléfono</strong></div>
+                        <div class="datos__item">67068809</div>
+                    </div>
+                </div>
+
+                <!-- Datos de la empresa -->
+                <div class="factura__container__item factura__container__item--datos">
+                    <div class="datos">
+                        <div class="datos__item"><strong>Código salida</strong></div>
+                        <div class="datos__item">10299</div>
+                    </div>
+                    <div class="datos">
+                        <div class="datos__item"><strong>Fecha</strong></div>
+                        <div class="datos__item">02/10/2021 13:45:00</div>
+                    </div>
+                    <div class="datos">
+                        <div class="datos__item"><strong>Instalación</strong></div>
+                        <div class="datos__item">Multi-99002221</div>
+                    </div>
+                    <div class="datos">
+                        <div class="datos__item"><strong>Responsable</strong></div>
+                        <div class="datos__item">DM</div>
+                    </div>
+                </div>
             </div>
 
             <!-- Contenedor de la tabla de precios -->

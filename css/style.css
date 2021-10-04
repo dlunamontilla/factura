@@ -3,8 +3,14 @@
   font-weight: 300;
 }
 
+strong {
+  font-weight: bold;
+  color: #4d4d4d;
+}
+
 .factura {
   --gap: 20px;
+  --size-icons: 50px;
   margin: 1.27cm auto;
   width: 21.5cm;
   min-height: 14cm;
@@ -17,6 +23,13 @@
 }
 .factura__title {
   padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.factura__title > * {
+  width: calc(100% / 3);
+  padding: 0 var(--gap);
 }
 .factura__title h1,
 .factura__title h2,
@@ -29,12 +42,20 @@
   font-weight: 400;
   color: #4d4d4d;
 }
+.factura__title__logo {
+  position: relative;
+}
+.factura__title__logo img {
+  display: block;
+  width: var(--size-icons);
+  height: var(--size-icons);
+  object-fit: scale-down;
+}
 .factura__container {
   display: flex;
   gap: var(--gap);
   padding-left: var(--gap);
   padding-right: var(--gap);
-  min-height: 90px;
 }
 .factura__container__item {
   flex-shrink: 1;
@@ -43,7 +64,8 @@
   border-radius: 10px;
   flex-grow: 1;
   flex-basis: 50%;
-  border: 1px solid;
+  border: 1px solid #b3b3b3;
+  padding: 5px 0;
 }
 .factura__container__item--qr {
   flex-grow: 2;
@@ -130,6 +152,17 @@
   border: 1px solid #cccccc;
   padding: 1px 5px;
   line-height: 1;
+}
+
+.datos {
+  display: flex;
+  width: 100%;
+  padding: 0 var(--gap);
+}
+.datos__item {
+  flex-basis: 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
